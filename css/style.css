@@ -11,6 +11,7 @@ body {
   padding-right: 20px !important;
 }
 .navbar:hover {
+  transition: all 0.2s ease;
   background-color: white !important;
   box-shadow: 5px 10px 15px #ffffff;
 }
@@ -96,7 +97,7 @@ ul li {
   padding-top: 200px;
 }
 .section-five {
-  padding: 120px 0px 50px 0px;
+  padding: 70px 0px 50px 0px;
   font-family: "Cinzel", serif;
 }
 .section-four h1 {
@@ -110,10 +111,15 @@ ul li {
   color: black;
   font-weight: bold;
 }
-.line {
+.contact-info .line {
   width: 100%;
   height: 1px;
   background: rgb(0, 0, 0);
+}
+.contact-info:hover {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  color: gray;
 }
 .gradient-field {
   height: 300px;
@@ -155,7 +161,7 @@ ul li {
   }
 }
 .textMove {
-  animation: moveAcrossText 0.5s forwards;
+  animation: moveAcrossText 0.2s forwards;
 }
 @keyframes moveAcross {
   0% {
@@ -165,7 +171,8 @@ ul li {
   }
   50% {
     opacity: 50%;
-    bottom: -100px;
+    position: relative;
+    bottom: -0px;
   }
   100% {
     opacity: 100%;
